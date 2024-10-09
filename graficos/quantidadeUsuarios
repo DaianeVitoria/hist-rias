@@ -1,0 +1,7 @@
+import{ getCSS, tickConfig} from "./common.js"
+
+async function quntidadedeUsuariosPorRede()
+    const url = 'https://raw.github'
+    const res = await fetch(url)
+    const dados = await res.json()
+    const quantidadedeUsuarios 
