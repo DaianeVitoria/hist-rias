@@ -1,4 +1,4 @@
-const url = 'github/DaianeVitoria/hist-rias?vscode-lang=pt-br'
+const url = 'htpps://raw.github/DaianeVitoria/hist-rias?vscode-lang=pt-br'
 
 async function vizualizarInformacoesGlobais() {
     const res = await fetch(url)
@@ -11,7 +11,13 @@ async function vizualizarInformacoesGlobais() {
 
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = 
+    paragrafo.innerHTML = `Você sabia que o mundo tem <span>${pessoasNoMundo} bilhões
+
+    const container = document.getElementById('graficos-container')
+    container.appendChild(paragrafo)
+}
+
+vizualizarInformacoesGlobais()
 
     
 
